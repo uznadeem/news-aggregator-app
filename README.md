@@ -51,26 +51,17 @@ Then run migrations:
 php artisan migrate
 ```
 
-### 6. Set API Keys
-Add your API keys to the `.env` file:
-
-```ini
-NEWS_API_KEY=your_newsapi_key
-GUARDIAN_API_KEY=your_guardian_key
-NYT_API_KEY=your_nyt_key
-```
-
-### 7. Seed the Database
+### 6. Seed the Database
 ```sh
 php artisan db:seed --class=SourcesTableSeeder
 ```
 
-### 8. Fetch Initial News Articles
+### 7. Fetch Initial News Articles
 ```sh
 php artisan news:fetch
 ```
 
-### 9. Start the Application
+### 8. Start the Application
 ```sh
 php artisan serve
 ```
